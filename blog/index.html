@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Мой блог</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Мой блог</h1>
+
+      <form id="article-form">
+        <input type="text" id="title-input" placeholder="Заголовок" required />
+        <textarea
+          id="content-input"
+          placeholder="Содержимое"
+          required
+        ></textarea>
+        <input type="text" id="tags-input" placeholder="Теги (через запятую)" />
+        <button type="submit">Добавить статью</button>
+      </form>
+
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Поиск по названию или тегам"
+        />
+        <button type="submit">Искать</button>
+      </form>
+
+      <div id="articles-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

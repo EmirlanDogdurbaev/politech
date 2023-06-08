@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Онлайн-кулинарная книга</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Онлайн-кулинарная книга</h1>
+    </header>
+
+    <div class="container">
+      <section class="recipe-form">
+        <h2 class="section-title">Добавить рецепт</h2>
+        <input
+          type="text"
+          id="dishInput"
+          class="form-input"
+          placeholder="Блюдо"
+          required
+        />
+        <input
+          type="text"
+          id="ingredientsInput"
+          class="form-input"
+          placeholder="Ингредиенты"
+          required
+        />
+        <input
+          type="text"
+          id="instructionsInput"
+          class="form-input"
+          placeholder="Инструкции"
+          required
+        />
+        <button id="addRecipeBtn" class="btn">Добавить</button>
+      </section>
+
+      <section class="search-form">
+        <h2 class="section-title">Поиск</h2>
+        <input
+          type="text"
+          id="searchInput"
+          class="form-input"
+          placeholder="Поиск"
+        />
+        <button id="searchBtn" class="btn">Найти</button>
+      </section>
+
+      <section class="recipe-list">
+        <h2 class="section-title">Рецепты</h2>
+        <ul id="recipes" class="recipe-items"></ul>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
